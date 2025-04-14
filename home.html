@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="slide.css">
+    <script src="slide.js"></script>
+    <script src="Slideopen.js"></script>
+        <title>Home Page</title> 
+          
+        <style>
+           #para1 {
+                    position:relative;
+                    left: 0px;
+                    bottom: 10px;
+                    height: 40px;
+                    width: 200px;
+                    font-size:18px;
+            }
+            li{
+                float: left;
+                width: 15%;
+                text-align: center;
+                margin: 20px 0px;
+                padding: 5px 10px;
+                font-size: 20px;
+                
+            }
+            a{
+                color: aliceblue;
+                font-style: oblique;
+            }
+            .button {
+                    background-color: #4CAF50; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 2px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    cursor: pointer;
+            }
+            .button:hover {
+                             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            
+            a:hover {
+                             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                             color: aqua;
+            }
+            .low {
+  background-image: url("design2.jpg");
+}
+.col2 {
+  float: left;
+  width: 47%;
+  padding: 15px;
+ }
+
+/* Clear floats after image containers */
+.row2::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.dg {
+  position:relative;
+  top: 10px;
+  bottom: 30px;
+  right: 20px;
+  left: 20px;
+   font-size: 30px;
+   text-align: center;
+   font-family:Franklin Gothic Medium;
+   color:black;
+}
+.col3 {
+  float: left;
+  width: 47.5%;
+  padding: 15px;
+ }
+
+/* Clear floats after image containers */
+.row3::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.col4 {
+  float: left;
+  width: 47.5%;
+  padding: 15px;
+ }
+
+/* Clear floats after image containers */
+.row4::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.col5 {
+  float: left;
+  width: 47.5%;
+  padding: 15px;
+ }
+
+/* Clear floats after image containers */
+.row5::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.sticker{
+  width:30% ;
+   height: 300px;
+   float: left;
+   margin-left: 2%;
+   text-align: center;
+   background-color: rgba(245, 173, 245, 0.68);
+   border-radius: 10px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlide {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.texture {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.doting {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.actives {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fades {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .texture {font-size: 11px}
+}
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;
+                    height: 650px;
+                    float: none;">
+                    
+            <nav style="background-color: #798726;
+                        width: 100%;
+                        height: 100px;">
+                <div style="width: 30%;
+                            height: 80px;
+                            margin: 10px 0px 10px 5px;
+                            float: left;">
+                    <img src="restorenlogo-removebg-preview.png" alt="no logo " style="width: 100%; height: 100%;">
+                </div>
+                <div style="width: 65%;
+                            height: 80px;
+                            float: left;
+                            text-align: right;
+                            margin: 10px 0px 10px 5px;">
+                    <ul style="list-style-type: none;
+                                text-align: right;
+                                height: 80px;
+                                width: 100%;
+                                margin: 0px;
+                                padding: 0px 10px ;">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menue.html">Menue</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li style="width: 100px; height: 40px; margin-left: 100px">
+                          <a href="book_a_table.html"
+                            ><button class="button" id="para1">Book a Table</button></a
+                          >
+                        </li>
+                    </ul>
+                
+
+                </div>       
+            
+            </nav>
+            <img src="home image.png" alt="Image" style="width: 100%; height: 520px">
+        </div> 
+        <div>
+          <!-- Container for the image gallery -->
+        <div class="container">
+        
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="Restaurdentimage1.jpg" style="width:100%;height: 500px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="Restaurdentimage2.jpg" style="width:100%;height:500px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="Restaurdentimage3.jpg" style="width:100%;height:500px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="Restaurdentimage4.jpg" style="width:100%;height:500px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="Restaurdentimage5.jpg" style="width:100%;height:500px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="Restaurdentimage6.jpg" style="width:100%;height:500px">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage1.jpg" style="width:100%;height:200px" onclick="currentSlide(1)" alt="Restoran">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage2.jpg" style="width:100%;height:200px" onclick="currentSlide(2)" alt="Dinning Table Room">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage3.jpg" style="width:100%;height:200px" onclick="currentSlide(3)" alt="Banqueet">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage4.jpg" style="width:100%;height:200px" onclick="currentSlide(4)" alt="Kitchen">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage5.jpg" style="width:100%;height:200px" onclick="currentSlide(5)" alt="Bakery">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Restaurdentimage6.jpg" style="width:100%;height: 200px" onclick="currentSlide(6)" alt="Bakery">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div style="width:100% ; height: 300px;float: left;margin-top: 30px; margin-bottom: 30px; align-items: center;">
+          <div class="sticker">
+              <img src="eating food.png" style="height: 100px; width: 100px; width: 100px;margin: 5px;padding: 5px;">
+              <h2>EATING FOOD</h2>
+              <p>We combine the finest quality and impeccably sourced ingredients to create authentic delicacies</p>
+
+          </div>
+          <div class="sticker">
+              <img src="cake.png" style="height: 100px;width: 100px;margin: 5px;padding: 5px;">
+              <h2>FRESH FOOD</h2>
+              <p>The food is freshly prepared in a hygienic and safe kitchen.</p>
+
+          </div>
+          <div class="sticker">
+              <img src="birthday-cake.png" style="height: 100px; width: 100px;margin: 5px;padding: 5px;">
+              <h2>CAKES & COOKIES</h2>
+            <p>Dig into our variety-some menu where you will find all kinds of desserts you can think of. We bake fresh with Love!</p>
+          </div>
+      </div>
+      <div class="slideshow-container1">
+
+        <div class="mySlide fades">
+          <div class="numbertext1">1 / 3</div>
+          <img src="burger.jpg" style="width:100%;height: 500; ">
+          <div class="texture">Caption Text</div>
+        </div>
+        
+        <div class="mySlide fades">
+          <div class="numbertext1">2 / 3</div>
+          <img src="food1.jpg" style="width:100%; height: 500;">
+          <div class="texture">Caption Two</div>
+        </div>
+        
+        <div class="mySlide fades">
+          <div class="numbertext1">3 / 3</div>
+          <img src="food2.jpg" style="width:100%; height: 500;">
+          
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="doting"></span> 
+          <span class="doting"></span> 
+          <span class="doting"></span> 
+        </div>
+        
+        <div style="width: 100% ;height: 200px; float: left;text-align: center;margin-top: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <h1>THE RESTAURANT</h1>
+            <p style="font-size: 25px;font-style: italic; font-style:Open Sans;">The restaurant boasts style, ambience and hospitality offering authentic Indian cooking prepared with warmth and love.</p>
+
+        </div>
+        <div style="width: 100%;height: 500px;float: left;">
+            <img src="collective food.png" width="100%" height="100%">
+        </div>
+      </div>
+      <div style="width: 100%;height: 400px;float: left;"> 
+        <div class="low">
+          <div class="row2">
+            <div class="col2">
+              <div class="dg">Contact Us
+              </div>
+            </div>
+              <div class="col2">
+                <div class="dg">Opening Timing</div>
+              </div>
+          </div>
+        
+          <div class="row3">
+              <div class="col3">
+                <div class="dg"><img src="google-maps.png" alt="Mail" style="Width: 30px;height:20px"> 123 Street,Malviya Nagar ,Jaipur 
+                </div>
+              </div>
+                <div class="col3">
+                  <div class="dg"><img src="clock.png" alt="Mail" style="Width: 30px;height:20px"> Monday-Saturday
+                    <br>
+                     9:00AM - 9:00PM
+                  </div>
+                </div>
+          </div>
+        
+          <div class="row4">
+              <div class="col4">
+                <div class="dg"><img src="telephone-call.png" alt="Mail" style="Width: 30px;height:20px"> +91 7428532499</div>
+              </div>
+              <div class="col4">
+              <div class="dg"><img src="clock.png" alt="Mail" style="Width: 30px;height:20px"> Sunday
+                <br>
+                 
+                10:00AM - 12:00Pm
+              </div>
+              </div>
+          </div>
+        
+          <div class="row5">
+            <div class="col5">
+              <div class="dg"><img src="gmail.png" alt="Mail" style="Width: 30px;height:20px"> restoran@gmail.com</div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <script>
+      let slidesIndex = 0;
+showSlide();
+
+function showSlide() {
+  let i;
+  let slide = document.getElementsByClassName("mySlide");
+  let dot = document.getElementsByClassName("doting");
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";  
+  }
+  slidesIndex++;
+  if (slidesIndex > slide.length) {slidesIndex = 1}    
+  for (i = 0; i < dot.length; i++) {
+    dot[i].className = dot[i].className.replace(" actives", "");
+  }
+  slide[slidesIndex-1].style.display = "block";  
+  dot[slidesIndex-1].className += " actives";
+  setTimeout(showSlide, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
+    
